@@ -1,14 +1,15 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
-import CategoryNews from "../pages/TotalNews";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import AuthLayout from "../layouts/AuthLayout";
-import NewsDetails from "../pages/NewsDetails";
+import NewsDetails from "../pages/SkillDetails";
 import PrivateRoute from "../provider/PrivateRoute";
 import ErrorComponent from "../components/ErrorComponent";
-import TotalNews from "../pages/TotalNews";
+import Totalskills from "../pages/TotalSkills";
+import SkillDetails from "../pages/SkillDetails";
+import MyProfile from "../pages/MyProfile";
 
 const router = createBrowserRouter([
   {
@@ -22,8 +23,8 @@ const router = createBrowserRouter([
       {
         index: true,
         path: "",
-        element: <TotalNews></TotalNews>,
-        loader: () => fetch("/news.json"),
+        element: <Totalskills></Totalskills>,
+        loader: () => fetch("/skills.json"),
       },
     ],
   },
@@ -42,13 +43,22 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/news-details/:id",
+    path: "/skill-details/:id",
     element: (
       <PrivateRoute>
-        <NewsDetails></NewsDetails>
+        <SkillDetails></SkillDetails>
       </PrivateRoute>
     ),
-    loader: () => fetch("/news.json"),
+    loader: () => fetch("/skills.json"),
+  },
+  {
+    path: "/myprofile",
+    element: (
+      <PrivateRoute>
+        <MyProfile ></MyProfile>
+      </PrivateRoute>
+    ),
+    loader: () => fetch("/skills.json"),
   },
   {
     path: "/*",
