@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router";
 import { AuthContext } from "../provider/AuthProvider";
 import { HiOutlineEye, HiOutlineEyeOff } from "react-icons/hi";
 import toast from "react-hot-toast";
@@ -52,6 +52,7 @@ const Register = () => {
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });
+            toast.success("Registration successful!");
             navigate("/");
           })
           .catch((error) => {
@@ -60,13 +61,12 @@ const Register = () => {
           });
       })
       .catch((error) => {
-        const errorMessage = error.message;
-        toast(errorMessage);
+        toast.error(error.message);
       });
   };
 
   return (
-    <div className="flex justify-center min-h-screen items-center">
+    <div className="flex justify-center min-h-screen items-center bg-gray-50">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
         <h2 className="font-semibold text-2xl text-center mb-3">
           Register your account
@@ -104,7 +104,7 @@ const Register = () => {
               required
             />
 
-            {/* Password with toggle */}
+            {/* Password */}
             <label className="label">Password</label>
             <div className="relative">
               <input
@@ -132,6 +132,7 @@ const Register = () => {
             <button type="submit" className="btn btn-neutral mt-4">
               Register
             </button>
+
             <p className="font-semibold text-center pt-5">
               Already Have An Account?{" "}
               <Link className="text-secondary" to="/auth/login">
