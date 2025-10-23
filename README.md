@@ -1,5 +1,7 @@
 # Esho Sikhi
 
+https://zippy-cendol-b9b2c6.netlify.app/
+
 ## Project Purpose
 
 **Esho Sikhi** is an online learning platform designed to help users acquire new skills across multiple domains such as coding, communication, yoga, and more. The platform provides interactive learning resources, skill-based courses, and real-world practical knowledge to empower learners.

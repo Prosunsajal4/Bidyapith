@@ -1,14 +1,13 @@
 import React, { useState, useContext } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import { HiOutlineEye, HiOutlineEyeOff } from "react-icons/hi";
-import toast from "react-hot-toast";
 
 const Register = () => {
   const { createUser, setUser, updateUser } = useContext(AuthContext);
   const [nameError, setNameError] = useState("");
-  const [passwordError, setPasswordError] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState("");
 
   const navigate = useNavigate();
 
@@ -45,14 +44,12 @@ const Register = () => {
       setPasswordError("");
     }
 
-    // Create user
     createUser(email, password)
       .then((result) => {
         const user = result.user;
         updateUser({ displayName: name, photoURL: photo })
           .then(() => {
             setUser({ ...user, displayName: name, photoURL: photo });
-            toast.success("Registration successful!");
             navigate("/");
           })
           .catch((error) => {
@@ -61,12 +58,12 @@ const Register = () => {
           });
       })
       .catch((error) => {
-        toast.error(error.message);
+        alert(error.message);
       });
   };
 
   return (
-    <div className="flex justify-center min-h-screen items-center bg-gray-50">
+    <div className="flex justify-center min-h-screen items-center">
       <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl py-5">
         <h2 className="font-semibold text-2xl text-center mb-3">
           Register your account
@@ -118,11 +115,7 @@ const Register = () => {
                 className="absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer text-gray-500"
                 onClick={() => setShowPassword(!showPassword)}
               >
-                {showPassword ? (
-                  <HiOutlineEyeOff size={20} />
-                ) : (
-                  <HiOutlineEye size={20} />
-                )}
+                {showPassword ? <HiOutlineEyeOff size={20} /> : <HiOutlineEye size={20} />}
               </span>
             </div>
             {passwordError && (
