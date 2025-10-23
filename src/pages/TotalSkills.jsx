@@ -10,11 +10,9 @@ const TotalSkills = () => {
         Total <span className="text-secondary">{data.length}</span> Skills Found
       </h2>
 
-      <div className="grid grid-cols-3 gap-5 ">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-5 ">
         {data.map((skill) => (
-          
-            <SkillCard key={skill.skillId} skill={skill}></SkillCard>
-          
+          <SkillCard key={skill.skillId} skill={skill}></SkillCard>
         ))}
       </div>
     </div>

@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="flex justify-between items-center w-11/12 mx-auto py-4 ">
       <div>
-        <h1 className="text-4xl font-bold text-primary">
+        <h1 className="md:text-4xl text-2xl font-bold text-primary">
           Esho <span className="text-secondary">Shikhi</span>
         </h1>
         <p className="text-accent">Learn Something New Every Day</p>

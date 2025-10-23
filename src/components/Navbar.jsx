@@ -21,9 +21,10 @@ const Navbar = () => {
       <div className="login-btn flex gap-5">
         <Link to="/myprofile">
           <img
-            className="w-12 rounded-full"
+            className="w-12 rounded-full "
             src={`${user ? user.photoURL : userIcon}`}
             alt=""
+            title={user ? user.displayName : "Guest User"}
           />
         </Link>
         {user ? (

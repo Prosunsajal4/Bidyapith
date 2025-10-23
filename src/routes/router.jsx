@@ -10,6 +10,7 @@ import ErrorComponent from "../components/ErrorComponent";
 import Totalskills from "../pages/TotalSkills";
 import SkillDetails from "../pages/SkillDetails";
 import MyProfile from "../pages/MyProfile";
+import ForgotPassword from "../pages/ForgotPassword";
 
 const router = createBrowserRouter([
   {
@@ -55,7 +56,7 @@ const router = createBrowserRouter([
     path: "/myprofile",
     element: (
       <PrivateRoute>
-        <MyProfile ></MyProfile>
+        <MyProfile></MyProfile>
       </PrivateRoute>
     ),
     loader: () => fetch("/skills.json"),
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/*",
     element: <ErrorComponent />,
+  },
+  {
+    path: "/auth/forgot-password",
+    element: <ForgotPassword />,
   },
 ]);
 

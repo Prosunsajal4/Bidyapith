@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import SkillDetailsCard from "../components/SkillDetailsCard";
 import { useLoaderData, useParams } from "react-router";
 import Footer from "../components/Footer";
+import BookSessionForm from "../components/BookSessionForm";
 
 const SkillDetails = () => {
   const data = useLoaderData();
@@ -24,6 +25,7 @@ const SkillDetails = () => {
         </h2>
         <SkillDetailsCard skill={skill}></SkillDetailsCard>
       </main>
+      <BookSessionForm />
       <Footer></Footer>
     </div>
   );
