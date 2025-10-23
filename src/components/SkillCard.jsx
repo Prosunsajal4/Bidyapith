@@ -2,17 +2,18 @@ import { FaEye, FaStar, FaShareAlt, FaRegBookmark } from "react-icons/fa";
 import { Link } from "react-router";
 
 const SkillCard = ({ skill }) => {
-  const { skillId, image, price, rating } = skill;
+  const { skillId, image, price, rating, skillName } = skill;
 
   return (
     <>
-      <div className="w-[450px] bg-gray-100 p-4 border-b-cyan-800 rounded-lg overflow-hidden shadow shadow-lime-700 hover:shadow-2xl transition-shadow ">
+      <div className="w-[450px] hover:shadow-2xl hover:-translate-y-1 transition-all bg-gray-100 p-4 border-b-cyan-800 rounded-lg overflow-hidden shadow shadow-lime-700 ">
         <img
           src={image}
           alt=""
           className="w-full h-48 object-cover rounded-lg"
         />
-        <div className="my-4 flex justify-between items-center">
+        <h2 className="text-xl font-semibold my-2">{skillName}</h2>
+        <div className="my-2 flex justify-between items-center">
           <h2>price: {price}$</h2>
           <h2>rating: {rating}⭐</h2>
         </div>

@@ -16,8 +16,8 @@ const Navbar = () => {
   };
   return (
     <div className="flex justify-between items-center">
-      <div className="">{user && user.email}</div>
-      
+      <div className=""></div>
+
       <div className="login-btn flex gap-5">
         <Link to="/myprofile">
           <img
