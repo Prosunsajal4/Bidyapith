@@ -8,12 +8,11 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           {/* Logo */}
           <div className="mb-6 md:mb-0">
-            <h2 className="text-2xl font-bold">
-              The <span className="text-red-500">Dragon</span> News
+            <img src="/eshosikhi.png" alt="" className="h-10" />
+            <h2 className="text-2xl font-bold mt-2">
+              Esho <span className="text-red-500">Shikhi</span>
             </h2>
-            <p className="mt-2 text-gray-400">
-              Stay updated with the latest news
-            </p>
+            <p className="text-gray-400">Learn Something New Every Day</p>
           </div>
 
           {/* Links */}
@@ -134,8 +133,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-gray-700 pt-5 text-center text-gray-400">
-          &copy; {new Date().getFullYear()} The Dragon News. All rights
-          reserved.
+          &copy; {new Date().getFullYear()} Esho Sikhi. All rights reserved.
         </div>
       </div>
     </footer>

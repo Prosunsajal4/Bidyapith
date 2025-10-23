@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import HeroSlider from "../components/HeroSlider";
 import TopRatedProviders from "../components/TopRatedProviders";
 import HowItWorks from "../components/HowItsWorks";
+import Testimonials from "../pages/Testimonials";
 
 const HomeLayout = () => {
   return (
@@ -25,6 +26,7 @@ const HomeLayout = () => {
       </main>
       <TopRatedProviders />
       <HowItWorks />
+      <Testimonials></Testimonials>
       <Footer></Footer>
     </div>
   );
