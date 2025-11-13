@@ -24,3 +24,4 @@ https://zippy-cendol-b9b2c6.netlify.app/
 - `swiper` – Responsive slider/carousel for hero section.
 - `aos` – Animate On Scroll library for smooth scroll animations.
 - `tailwindcss` & `daisyui` – Utility-first CSS framework for styling components.
+# Bidyapith
