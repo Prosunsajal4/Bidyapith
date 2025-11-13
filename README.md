@@ -1,10 +1,10 @@
-# Esho Sikhi
+# BidyaPith
 
 https://zippy-cendol-b9b2c6.netlify.app/
 
 ## Project Purpose
 
-**Esho Sikhi** is an online learning platform designed to help users acquire new skills across multiple domains such as coding, communication, yoga, and more. The platform provides interactive learning resources, skill-based courses, and real-world practical knowledge to empower learners.
+**BidyaPith** is an online learning platform designed to help users acquire new skills across multiple domains such as coding, communication, yoga, and more. The platform provides interactive learning resources, skill-based courses, and real-world practical knowledge to empower learners.
 
 ## Key Features
 
@@ -24,5 +24,3 @@ https://zippy-cendol-b9b2c6.netlify.app/
 - `swiper` – Responsive slider/carousel for hero section.
 - `aos` – Animate On Scroll library for smooth scroll animations.
 - `tailwindcss` & `daisyui` – Utility-first CSS framework for styling components.
-# Bidyapith
-# Bidyapith

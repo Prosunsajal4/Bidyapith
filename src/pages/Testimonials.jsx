@@ -34,9 +34,7 @@ const Testimonials = () => {
   return (
     <section className="py-20 bg-gray-100 w-full">
       <div className="w-11/12 max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-10">
-          What Our Students Say
-        </h2>
+        <h2 className="text-3xl font-bold text-center mb-10">Why Choose US</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, index) => (
             <div
