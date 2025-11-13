@@ -25,3 +25,4 @@ https://zippy-cendol-b9b2c6.netlify.app/
 - `aos` – Animate On Scroll library for smooth scroll animations.
 - `tailwindcss` & `daisyui` – Utility-first CSS framework for styling components.
 # Bidyapith
+# Bidyapith
