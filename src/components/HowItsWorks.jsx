@@ -4,8 +4,8 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: <FaSearch size={30} className="text-indigo-500 mb-3" />,
-      title: "Browse Skills",
-      description: "Explore a wide variety of courses and find the perfect skill to learn.",
+      title: "Browse courses",
+      description: "Explore a wide variety of courses and find the perfect course to learn.",
     },
     {
       icon: <FaChalkboardTeacher size={30} className="text-indigo-500 mb-3" />,
@@ -20,7 +20,7 @@ const HowItWorks = () => {
     {
       icon: <FaCertificate size={30} className="text-indigo-500 mb-3" />,
       title: "Get Certified",
-      description: "Complete the course and receive a certificate to showcase your skills.",
+      description: "Complete the course and receive a certificate to showcase your courses.",
     },
   ];
 

@@ -1,9 +1,9 @@
-import React, { use } from "react";
-import { Link, NavLink } from "react-router";
+import React, { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
 import userIcon from "/user.png";
 import { AuthContext } from "../provider/AuthProvider";
 const Navbar = () => {
-  const { user, logOut } = use(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
   const handleLogOut = () => {
     console.log("user trying to LogOut");
     logOut()

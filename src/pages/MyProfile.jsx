@@ -4,7 +4,7 @@ import { AuthContext } from "../provider/AuthProvider";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 import toast, { Toaster } from "react-hot-toast";
 
 const MyProfile = () => {

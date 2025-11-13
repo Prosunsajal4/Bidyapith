@@ -7,14 +7,14 @@ const HeroSlider = () => {
   const slides = [
     {
       title: "Welcome to Esho Sikhi",
-      text: "Learn new skills and grow your knowledge — all in one place.",
+      text: "Learn new courses and grow your knowledge — all in one place.",
     },
     {
       title: "Start Learning Today",
-      text: "From coding to communication — explore skills that empower your future.",
+      text: "From coding to communication — explore courses that empower your future.",
     },
     {
-      title: "Skill is Power",
+      title: "Knowledge is Power",
       text: "Empower yourself through hands-on learning and real-world growth.",
     },
   ];

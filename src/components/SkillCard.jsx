@@ -1,12 +1,14 @@
 import { FaEye, FaStar, FaShareAlt, FaRegBookmark } from "react-icons/fa";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 const SkillCard = ({ skill }) => {
-  const { skillId, image, price, rating, skillName } = skill;
+  // Support both MongoDB _id and legacy skillId
+  const courseId = skill._id || skill.skillId || skill.id;
+  const { image, price, rating, skillName } = skill;
 
   return (
     <>
-      <div className="w-[450px] hover:shadow-2xl hover:-translate-y-1 transition-all bg-gray-100 p-4 border-b-cyan-800 rounded-lg overflow-hidden shadow shadow-lime-700 ">
+      <div className="w-full h-full flex flex-col hover:shadow-2xl hover:-translate-y-1 transition-all bg-gray-100 p-4 border-b-cyan-800 rounded-lg overflow-hidden shadow shadow-lime-700 ">
         <img
           src={image}
           alt=""
@@ -18,8 +20,8 @@ const SkillCard = ({ skill }) => {
           <h2>rating: {rating}⭐</h2>
         </div>
         <Link
-          to={`/skill-details/${skillId}`}
-          className="text-primary font-semibold cursor-pointer hover:underline"
+          to={`/skill-details/${courseId}`}
+          className="btn btn-primary mt-auto"
         >
           View Details
         </Link>

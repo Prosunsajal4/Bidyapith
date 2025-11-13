@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="md:flex md:justify-between">
           {/* Logo */}
           <div className="mb-6 md:mb-0">
-            <img src="/eshosikhi.png" alt="" className="h-10" />
+            <img src="/bidyapith_main.jpg" alt="" className="h-20" />
             <h2 className="text-2xl font-bold mt-2">
-              Esho <span className="text-red-500">Shikhi</span>
+              Bidya <span className="text-red-500">Pith</span>
             </h2>
             <p className="text-gray-400">Learn Something New Every Day</p>
           </div>
@@ -53,12 +53,12 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/prosun"
+                    href="https://x.com/prosun"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-red-500"
                   >
-                    Twitter
+                    X
                   </a>
                 </li>
               </ul>
@@ -120,12 +120,12 @@ const Footer = () => {
                   LI
                 </a>
                 <a
-                  href="https://twitter.com/prosun"
+                  href="https://x.com/prosun"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-circle btn-sm bg-gray-700 hover:bg-red-500"
                 >
-                  TW
+                  X
                 </a>
               </div>
             </div>
@@ -133,7 +133,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-10 border-t border-gray-700 pt-5 text-center text-gray-400">
-          &copy; {new Date().getFullYear()} Esho Sikhi. All rights reserved.
+          &copy; {new Date().getFullYear()} BidyaPith. All rights reserved.
         </div>
       </div>
     </footer>
