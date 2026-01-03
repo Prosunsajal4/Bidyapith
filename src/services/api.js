@@ -153,7 +153,28 @@ export const enrollmentsAPI = {
     }),
 };
 
+// Payment API (Stripe)
+export const paymentAPI = {
+  // Create payment intent
+  createPaymentIntent: (data) =>
+    apiRequest("/create-payment-intent", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }),
+
+  // Confirm payment and enroll
+  confirmPayment: (data) =>
+    apiRequest("/confirm-payment", {
+      method: "POST",
+      body: JSON.stringify(data),
+    }),
+
+  // Get payment history
+  getPaymentHistory: () => apiRequest("/payments"),
+};
+
 export default {
   courses: coursesAPI,
   enrollments: enrollmentsAPI,
+  payment: paymentAPI,
 };
